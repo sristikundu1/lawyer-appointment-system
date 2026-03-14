@@ -32,7 +32,7 @@ const Lawyer = ({ lawyer }) => {
             {licenseNo}
           </p>
           <div className="card-actions justify-baseline">
-            <button className="btn  w-full text-[rgba(23,106,229,1)] text-sm font-bold border border-[rgba(23,106,229,0.2)] rounded-full px-3 py-2">
+            <button className="btn  w-full text-[rgba(23,106,229,1)] text-sm font-bold border border-[rgba(23,106,229,0.2)] rounded-full px-3 py-2 hover:text-white hover:bg-[rgba(23,106,229,1)]">
               View Details
             </button>
           </div>

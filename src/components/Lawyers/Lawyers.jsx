@@ -31,7 +31,7 @@ const Lawyers = ({ allLawyers }) => {
         <div className="flex justify-center my-6">
           <button
             onClick={() => setShowAll(true)}
-            className="px-9 py-2 rounded-4xl bg-[#0EA106] text-white text-sm font-bold hover:bg-black transition"
+            className="px-9 py-2 rounded-4xl bg-[#0EA106] text-white text-sm font-bold hover:bg-white hover:text-[#0EA106] hover:border-[#0EA106] hover:border transition"
           >
             Show All Lawyer
           </button>
