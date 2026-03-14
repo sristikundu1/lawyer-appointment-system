@@ -6,17 +6,24 @@ const Navbar = () => {
   const Links = (
     <>
       <Link to={"/"}>
-        <li>Home</li>
+        <li className="mr-4 text-[rgba(15,15,15,0.7)] font-medium">Home</li>
       </Link>
-      <li>
-        <a> My-Bookings</a>
-      </li>
-      <li>
-        <a> Blogs</a>
-      </li>
-      <li>
-        <a>Contact Us</a>
-      </li>
+
+      <Link to={"/my-bookings"}>
+        <li className="mr-4 text-[rgba(15,15,15,0.7)] font-medium">
+          My-Bookings
+        </li>
+      </Link>
+
+      <Link to={"/blogs"}>
+        <li className="mr-4 text-[rgba(15,15,15,0.7)] font-medium">Blogs</li>
+      </Link>
+
+      <Link to={"/contact"}>
+        <li className="mr-4 text-[rgba(15,15,15,0.7)] font-medium">
+          Contact Us
+        </li>
+      </Link>
     </>
   );
   return (
