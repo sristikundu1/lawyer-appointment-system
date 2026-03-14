@@ -2,7 +2,7 @@ import React from "react";
 import bannerImg from "../../assets/banner.jpg";
 const Banner = () => {
   return (
-    <div className="max-w-11/12 mx-auto my-7">
+    <div className="max-w-10/12 mx-auto my-7">
       <div
         className="w-full h-screen bg-cover bg-center rounded-3xl flex flex-col items-center justify-center text-center px-24 "
         style={{
