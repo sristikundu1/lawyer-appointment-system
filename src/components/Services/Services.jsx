@@ -9,7 +9,7 @@ const CountUp = CountUpModule.default;
 
 const Services = () => {
   return (
-    <div className="max-w-10/12 mx-auto mt-20">
+    <div className="max-w-10/12 mx-auto mt-10 md:mt-20">
       <div className="w-9/12 mx-auto mb-5">
         <h2 className="text-4xl font-extrabold text-center">
           We Provide Best Law Services
@@ -22,23 +22,15 @@ const Services = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-5">
         {/* card 1  */}
-        <div className="card border border-[rgba(15,15,15,0.15)] rounded-xl bg-[rgba(15,15,15,0.05)] flex flex-col justify-start px-10 py-8 ">
-          <figure className="flex justify-start">
+        <div className="card border border-[rgba(15,15,15,0.15)] rounded-xl bg-[rgba(15,15,15,0.05)] flex flex-col justify-center md:justify-start px-10 py-8 ">
+          <figure className="flex justify-center md:justify-start">
             <img className="w-16 h-16" src={lawyer} alt="lawyer-icon" />
           </figure>
           <div>
-            <h2 className="card-title text-2xl font-extrabold text-left my-3">
-              <span>
-                <CountUp
-                  start={0}
-                  end={199}
-                  duration={4}
-                  delay={0}
-                  suffix="+"
-                />
-              </span>
+            <h2 className="card-title text-2xl font-extrabold flex justify-center md:justify-start  my-3">
+              <CountUp start={0} end={199} duration={4} delay={0} suffix="+" />
             </h2>
-            <p className="text-[rgba(15,15,15,0.6)] text-lg font-medium text-left">
+            <p className="text-[rgba(15,15,15,0.6)] text-lg font-medium text-center md:text-left">
               Total Lawyer
             </p>
           </div>
@@ -46,11 +38,11 @@ const Services = () => {
 
         {/* card 2  */}
         <div className="card border border-[rgba(15,15,15,0.15)] rounded-xl bg-[rgba(15,15,15,0.05)] flex flex-col justify-start px-10 py-8 ">
-          <figure className="flex justify-start">
+          <figure className="flex justify-center md:justify-start">
             <img className="w-16 h-16" src={star} alt="star-icon" />
           </figure>
           <div>
-            <h2 className="card-title text-2xl font-extrabold text-left my-3">
+            <h2 className="card-title text-2xl font-extrabold flex justify-center md:justify-start   my-3">
               <span>
                 <CountUp
                   start={0}
@@ -61,7 +53,7 @@ const Services = () => {
                 />
               </span>
             </h2>
-            <p className="text-[rgba(15,15,15,0.6)] text-lg font-medium text-left">
+            <p className="text-[rgba(15,15,15,0.6)] text-lg font-medium text-center md:text-left">
               Total Reviews
             </p>
           </div>
@@ -69,11 +61,11 @@ const Services = () => {
 
         {/* card 3  */}
         <div className="card border border-[rgba(15,15,15,0.15)] rounded-xl bg-[rgba(15,15,15,0.05)] flex flex-col justify-start px-10 py-8 ">
-          <figure className="flex justify-start">
+          <figure className="flex justify-center md:justify-start">
             <img className="w-16 h-16" src={order} alt="case-icon" />
           </figure>
           <div>
-            <h2 className="card-title text-2xl font-extrabold text-left my-3">
+            <h2 className="card-title text-2xl font-extrabold justify-center md:justify-start my-3">
               <span>
                 <CountUp
                   start={0}
@@ -84,7 +76,7 @@ const Services = () => {
                 />
               </span>
             </h2>
-            <p className="text-[rgba(15,15,15,0.6)] text-lg font-medium text-left">
+            <p className="text-[rgba(15,15,15,0.6)] text-lg font-medium text-center md:text-left">
               Cases Initiated
             </p>
           </div>
@@ -92,11 +84,11 @@ const Services = () => {
 
         {/* card 4  */}
         <div className="card border border-[rgba(15,15,15,0.15)] rounded-xl bg-[rgba(15,15,15,0.05)] flex flex-col justify-start px-10 py-8 ">
-          <figure className="flex justify-start">
+          <figure className="flex justify-center md:justify-start">
             <img className="w-16 h-16" src={people} alt="people-icon" />
           </figure>
           <div>
-            <h2 className="card-title text-2xl font-extrabold text-left my-3">
+            <h2 className="card-title text-2xl font-extrabold justify-center md:justify-start my-3">
               <span>
                 <CountUp
                   start={0}
@@ -107,7 +99,7 @@ const Services = () => {
                 />
               </span>
             </h2>
-            <p className="text-[rgba(15,15,15,0.6)] text-lg font-medium text-left">
+            <p className="text-[rgba(15,15,15,0.6)] text-lg font-medium text-center md:text-left">
               Total Stuffs
             </p>
           </div>

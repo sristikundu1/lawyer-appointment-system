@@ -7,9 +7,9 @@ const Lawyers = ({ allLawyers }) => {
   const lawyerToShow = showAll ? allLawyers : allLawyers.slice(0, 6);
 
   return (
-    <div className="max-w-10/12 mx-auto mt-6">
+    <div className="px-4 md:px-0 md:max-w-10/12 mx-auto mt-6">
       <div className="w-9/12 mx-auto mb-5">
-        <h2 className="text-4xl font-extrabold text-center">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center">
           Our Best Lawyers
         </h2>
         <p className="text-[rgba(15,15,15,0.8)] text-sm leading-6 text-center">

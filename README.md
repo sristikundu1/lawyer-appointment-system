@@ -1,16 +1,33 @@
-# React + Vite
+# Lawyer Appointment System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** [Click here to view](https://your-live-link.com)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Project Description
 
-## React Compiler
+**Lawyer Appointment System** is a React-based web application that allows users to browse verified lawyers, view detailed profiles, check availability, and book appointments easily.  
+The system ensures a smooth experience for users to find the right lawyer for their needs.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Browse all lawyers with profile picture, expertise, license number, and experience.
+- View detailed lawyer profile including phone, email, and additional details.
+- Check lawyer availability (per week) and make appointments.
+- Interactive charts and statistics using **Recharts**.
+- Blog page with articles, detailed posts, and easy navigation.
+- Responsive design for desktop, tablet, and mobile devices.
+
+---
+
+## Technologies Used
+
+- **Frontend:** React, Vite
+- **Styling:** Tailwind CSS, DaisyUI
+- **Icons:** React Icons
+- **Charts:** Recharts
+- **Routing:** React Router DOM
+- **Animations:** react-countup
+- **Tools & Frameworks:** VS Code, npm, GitHub

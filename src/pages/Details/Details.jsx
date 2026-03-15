@@ -35,7 +35,7 @@ const Details = () => {
   return (
     <div className="max-w-10/12 mx-auto mt-6">
       <Toaster></Toaster>
-      <div className="bg-[rgba(15,15,15,0.05)] rounded-xl p-20 border border-[rgba(15,15,15,0.15)] mb-5">
+      <div className="bg-[rgba(15,15,15,0.05)] rounded-xl p-8 md:p-20 border border-[rgba(15,15,15,0.15)] mb-5">
         <h2 className="text-3xl font-extrabold text-center mb-4">
           Lawyer’s Profile Details
         </h2>
@@ -136,7 +136,7 @@ const Details = () => {
 
           <div
             role="alert"
-            className="alert rounded-4xl bg-[rgba(255,160,0,0.1)] w-4/5"
+            className="alert rounded-4xl bg-[rgba(255,160,0,0.1)] md:w-4/5"
           >
             <PiWarningCircle className="text-xl text-[#FFA000]" />
             <span className="text-[#FFA000]">

@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import BlogDetails from "../BlogDetails/BlogDetails";
 
 const Blog = ({ blog }) => {
-  const { title, image, shortHeading, category } = blog;
+  const [selectedBlog, setSelectedBlog] = useState(null);
+
+  const { id, title, image, shortHeading, category } = blog;
   return (
     <div>
       <div className="card shadow-sm">
@@ -15,12 +18,22 @@ const Blog = ({ blog }) => {
           </div>
           <p className="text-lg font-medium my-3 leading-6 ">{shortHeading}</p>
           <div className="card-actions justify-end">
-            <div className="btn  w-full text-[rgba(23,106,229,1)] text-sm font-bold border border-[rgba(23,106,229,0.2)] rounded-full px-3 py-2 hover:text-white hover:bg-[rgba(23,106,229,1)]">
+            <button
+              onClick={() => setSelectedBlog(blog)}
+              className="btn w-full text-[rgba(23,106,229,1)] text-sm font-bold border border-[rgba(23,106,229,0.2)] rounded-full px-3 py-2 hover:text-white hover:bg-[rgba(23,106,229,1)]"
+            >
               Show Details
-            </div>
+            </button>
           </div>
         </div>
       </div>
+
+      {selectedBlog && (
+        <BlogDetails
+          blog={selectedBlog} // pass blog
+          onClose={() => setSelectedBlog(null)} // close modal
+        />
+      )}
     </div>
   );
 };

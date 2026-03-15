@@ -1,33 +1,49 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import logo from "../../assets/fi_8146906.png";
 
 const Navbar = () => {
   const Links = (
     <>
-      <Link to={"/"}>
-        <li className="mr-4 text-[rgba(15,15,15,0.7)] font-medium">Home</li>
-      </Link>
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          `mr-4 font-medium text-[rgba(15,15,15,0.7)] ${isActive ? "border-b-2 border-blue-500" : ""}`
+        }
+      >
+        Home
+      </NavLink>
 
-      <Link to={"/my-bookings"}>
-        <li className="mr-4 text-[rgba(15,15,15,0.7)] font-medium">
-          My-Bookings
-        </li>
-      </Link>
+      <NavLink
+        to="/my-bookings"
+        className={({ isActive }) =>
+          `mr-4 font-medium text-[rgba(15,15,15,0.7)] ${isActive ? "border-b-2 border-blue-500" : ""}`
+        }
+      >
+        My-Bookings
+      </NavLink>
 
-      <Link to={"/blogs"}>
-        <li className="mr-4 text-[rgba(15,15,15,0.7)] font-medium">Blogs</li>
-      </Link>
+      <NavLink
+        to="/blogs"
+        className={({ isActive }) =>
+          `mr-4 font-medium text-[rgba(15,15,15,0.7)] ${isActive ? "border-b-2 border-blue-500" : ""}`
+        }
+      >
+        Blogs
+      </NavLink>
 
-      <Link to={"/contact"}>
-        <li className="mr-4 text-[rgba(15,15,15,0.7)] font-medium">
-          Contact Us
-        </li>
-      </Link>
+      <NavLink
+        to="/contact"
+        className={({ isActive }) =>
+          `mr-4 font-medium text-[rgba(15,15,15,0.7)] ${isActive ? "border-b-2 border-blue-500" : ""}`
+        }
+      >
+        Contact Us
+      </NavLink>
     </>
   );
   return (
-    <div className="max-w-10/12 mx-auto">
+    <div className="md:max-w-10/12 mx-auto">
       <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
@@ -63,9 +79,11 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{Links}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn px-7 py-4 rounded-4xl bg-[#0EA106] text-white text-lg font-bold">
-            Contact Now
-          </a>
+          <Link to={"/contact"}>
+            <button className="btn md:px-7 md:py-4 rounded-4xl bg-[#0EA106] text-white text-lg font-bold">
+              Contact Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>

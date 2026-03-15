@@ -14,22 +14,26 @@ const Lawyer = ({ lawyer }) => {
   } = lawyer;
   return (
     <div>
-      <div className="card card-side border border-[rgba(15,15,15,0.15)] rounded-[16px] bg-white p-6">
+      <div className="card card-side border border-[rgba(15,15,15,0.15)] rounded-[16px] bg-white p-3 md:p-6">
         <figure>
-          <img className="w-40 h-40 rounded-2xl" src={image} alt="Lawyer" />
+          <img
+            className="w-28 h-28 md:w-40 md:h-40 rounded-2xl"
+            src={image}
+            alt="Lawyer"
+          />
         </figure>
-        <div className="card-body">
+        <div className="card-body ">
           <div className="flex items-center gap-2">
-            <button className="text-[rgba(9,152,47,1)] text-[12px] font-medium rounded-full bg-[rgba(9,152,47,0.1)] px-3 py-1">
+            <button className="text-[rgba(9,152,47,1)] text-xs md:text-[12px] font-medium rounded-full bg-[rgba(9,152,47,0.1)] px-3 py-1">
               {availability && availability.length > 0
                 ? "Available"
                 : "Not Available"}
             </button>
-            <button className="text-[rgba(23,106,229,1)] text-[12px] font-medium rounded-full bg-[rgba(23,106,229,0.1)] px-3 py-1">
+            <button className="text-[rgba(23,106,229,1)] text-xs md:text-[12px] font-medium rounded-full bg-[rgba(23,106,229,0.1)] px-3 py-1">
               {yearsOfExperience} Years Experience
             </button>
           </div>
-          <h2 className="card-title text-xl font-extrabold text-left">
+          <h2 className="card-title text-sm md:text-xl font-extrabold text-left">
             {name}
           </h2>
           <p className="text-[rgba(15,15,15,0.6)] text-sm font-medium text-left">
