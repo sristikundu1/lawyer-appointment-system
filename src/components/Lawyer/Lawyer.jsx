@@ -1,9 +1,17 @@
 import React from "react";
 import { AiOutlineTrademark } from "react-icons/ai";
+import { Link } from "react-router";
 
 const Lawyer = ({ lawyer }) => {
-  const { name, image, licenseNo, availability, yearsOfExperience, expertise } =
-    lawyer;
+  const {
+    id,
+    name,
+    image,
+    licenseNo,
+    availability,
+    yearsOfExperience,
+    expertise,
+  } = lawyer;
   return (
     <div>
       <div className="card card-side border border-[rgba(15,15,15,0.15)] rounded-[16px] bg-white p-6">
@@ -32,9 +40,11 @@ const Lawyer = ({ lawyer }) => {
             {licenseNo}
           </p>
           <div className="card-actions justify-baseline">
-            <button className="btn  w-full text-[rgba(23,106,229,1)] text-sm font-bold border border-[rgba(23,106,229,0.2)] rounded-full px-3 py-2 hover:text-white hover:bg-[rgba(23,106,229,1)]">
-              View Details
-            </button>
+            <Link to={`/lawyerDetails/${id}`} className="w-full block">
+              <button className="btn  w-full text-[rgba(23,106,229,1)] text-sm font-bold border border-[rgba(23,106,229,0.2)] rounded-full px-3 py-2 hover:text-white hover:bg-[rgba(23,106,229,1)]">
+                View Details
+              </button>
+            </Link>
           </div>
         </div>
       </div>

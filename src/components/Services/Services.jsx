@@ -7,7 +7,6 @@ import CountUpModule from "react-countup";
 
 const CountUp = CountUpModule.default;
 
-// console.log("CountUp component is:", CountUp);
 const Services = () => {
   return (
     <div className="max-w-10/12 mx-auto mt-20">

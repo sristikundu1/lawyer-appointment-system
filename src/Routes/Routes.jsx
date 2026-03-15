@@ -3,6 +3,8 @@ import { createBrowserRouter } from "react-router";
 import Root from "../pages/Root/Root";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
+import Details from "../pages/Details/Details";
+import MyBookings from "../components/MyBookings/MyBookings";
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +17,16 @@ export const router = createBrowserRouter([
         path: "/",
         loader: () => fetch("LawyerData.json"),
         Component: Home,
+      },
+      {
+        path: "/lawyerDetails/:id",
+        loader: () => fetch("/LawyerData.json"),
+        Component: Details,
+      },
+      {
+        path: "/my-bookings",
+        loader: () => fetch("/LawyerData.json"),
+        Component: MyBookings,
       },
     ],
   },
