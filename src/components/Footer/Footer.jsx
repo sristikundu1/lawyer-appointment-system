@@ -9,11 +9,20 @@ const Footer = () => {
   const Links = (
     <>
       <Link to={"/"}>
-        <a className="text-[rgba(255,255,255,0.7)]">Home</a>
+        <li className="mr-4 text-white font-medium">Home</li>
       </Link>
-      <a className="text-[rgba(255,255,255,0.7)]">My-Bookings</a>
-      <a className="text-[rgba(255,255,255,0.7)]">Blogs</a>
-      <a className="text-[rgba(255,255,255,0.7)]">Contact Us</a>
+
+      <Link to={"/my-bookings"}>
+        <li className="mr-4 text-white font-medium">My-Bookings</li>
+      </Link>
+
+      <Link to={"/blogs"}>
+        <li className="mr-4 text-white font-medium">Blogs</li>
+      </Link>
+
+      <Link to={"/contact"}>
+        <li className="mr-4 text-white font-medium">Contact Us</li>
+      </Link>
     </>
   );
   return (
@@ -26,7 +35,9 @@ const Footer = () => {
           </div>
         </aside>
 
-        <nav className="grid grid-flow-col gap-4">{Links}</nav>
+        <nav className="grid grid-flow-col gap-4">
+          <ul className="grid grid-flow-col gap-4 list-none">{Links}</ul>
+        </nav>
 
         <nav>
           <div className="grid grid-flow-col gap-4">

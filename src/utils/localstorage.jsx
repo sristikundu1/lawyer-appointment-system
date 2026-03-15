@@ -17,7 +17,7 @@ const getBookings = () => {
 // store data in localstorage
 
 const addBookings = (id) => {
-  const newBookings = getBookings();
+  const newBookings = getBookings("Bookings");
 
   if (newBookings.includes(id)) {
     toast.error("This Appointment is already taken!");
@@ -29,4 +29,14 @@ const addBookings = (id) => {
   }
 };
 
-export { addBookings, getBookings };
+// delete data from localstorage
+
+const deleteAppointment = (id) => {
+  const allAppointment = getBookings("Bookings");
+  const updatedAppointment = allAppointment.filter(
+    (appointment) => Number(appointment) !== Number(id),
+  );
+  localStorage.setItem("Bookings", JSON.stringify(updatedAppointment));
+};
+
+export { addBookings, getBookings, deleteAppointment };
