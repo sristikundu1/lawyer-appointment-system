@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "title": "Understanding Your Legal Rights",
+      "shortHeading": "Know what you're entitled to",
+      "image": "https://saraolaw.ca/wp-content/uploads/2023/08/Blog-Banner-July-2023-01-1080x658.jpg",
+      "details": "A comprehensive guide to understanding your rights in everyday situations, from employment to personal disputes. Learn how to protect yourself and make informed decisions.",
+      "writer": "John Doe",
+      "date": "2026-03-01",
+      "category": "Legal Advice"
+    },
+    {
+      "id": 2,
+      "title": "Top 5 Mistakes in Contract Agreements",
+      "shortHeading": "Avoid these pitfalls",
+      "image": "https://rdmlawyers.com/wp-content/uploads/2018/05/AdobeStock_121654723-680x345.jpeg",
+      "details": "Contracts can be tricky. Discover the most common mistakes people make when signing contracts and how to avoid legal consequences.",
+      "writer": "Jane Smith",
+      "date": "2026-02-20",
+      "category": "Contracts"
+    },
+    {
+      "id": 3,
+      "title": "Criminal Law: What You Need to Know",
+      "shortHeading": "Protect yourself legally",
+      "image": "https://res.cloudinary.com/jerrick/image/upload/v1623736682/60c8416a7fe4a7001efec6bd.jpg",
+      "details": "Understanding criminal law is essential for everyone. This article breaks down key concepts and offers tips for staying on the right side of the law.",
+      "writer": "Robert Brown",
+      "date": "2026-02-15",
+      "category": "Criminal Law"
+    },
+    {
+      "id": 4,
+      "title": "How to Choose the Right Lawyer",
+      "shortHeading": "Find your perfect legal partner",
+      "image": "https://www.leaders-in-law.com/wp-content/uploads/2022/06/AdobeStock_201815506-1030x518.jpeg",
+      "details": "Choosing a lawyer can be overwhelming. Learn the factors to consider when selecting a legal professional who matches your needs and case type.",
+      "writer": "Emily Johnson",
+      "date": "2026-01-30",
+      "category": "Legal Tips"
+    }
+  ]

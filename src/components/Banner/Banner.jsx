@@ -1,22 +1,20 @@
 import React from "react";
-import bannerImg from "../../assets/banner.jpg";
-const Banner = () => {
+// import bannerImg from "../../assets/banner.jpg";
+const Banner = ({ title, subtitle, image }) => {
   return (
     <div className="max-w-10/12 mx-auto my-7">
       <div
         className="w-full h-screen bg-cover bg-center rounded-3xl flex flex-col items-center justify-center text-center px-24 "
         style={{
-          backgroundImage: `linear-gradient(180deg, rgba(15, 15, 15, 0) -27.727%, rgba(15, 15, 15, 0.8) 100%), url(${bannerImg})`,
+          backgroundImage: `linear-gradient(180deg, rgba(15, 15, 15, 0) -27.727%, rgba(15, 15, 15, 0.8) 100%), url(${image})`,
         }}
       >
         <h1 className="text-white text-5xl font-extrabold leading-[60px]">
-          It avoids subjective claims or exaggeration that might raise red flags
-          legally
+          {title}
         </h1>
 
         <p className="text-white text-[16px] font-medium leading-[26px] mt-4 max-w-2xl">
-          Our platform connects you with verified, experienced doctors across
-          various specialties — all at your convenience.
+          {subtitle}
         </p>
       </div>
     </div>
