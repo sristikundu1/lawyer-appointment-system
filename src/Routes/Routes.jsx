@@ -7,6 +7,7 @@ import Details from "../pages/Details/Details";
 import MyBookings from "../components/MyBookings/MyBookings";
 import Blogs from "../components/Blogs/Blogs";
 import Contact from "../components/Contact/Contact";
+import NotFoundLawyer from "../components/NotFoundLawyer/NotFoundLawyer";
 
 export const router = createBrowserRouter([
   {
@@ -26,13 +27,17 @@ export const router = createBrowserRouter([
         Component: Details,
       },
       {
+        path: "/not-found",
+        Component: NotFoundLawyer,
+      },
+      {
         path: "/my-bookings",
-        loader: () => fetch("/LawyerData.json"),
+        loader: () => fetch("LawyerData.json"),
         Component: MyBookings,
       },
       {
         path: "/blogs",
-        loader: () => fetch("/Blogs.json"),
+        loader: () => fetch("Blogs.json"),
         Component: Blogs,
       },
       {

@@ -2,7 +2,7 @@ import React from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { AiOutlineTrademark } from "react-icons/ai";
 import { PiWarningCircle } from "react-icons/pi";
-import { useLoaderData, useParams } from "react-router";
+import { Navigate, useLoaderData, useParams } from "react-router";
 import { addBookings } from "../../utils/localstorage";
 
 const Details = () => {
@@ -11,8 +11,14 @@ const Details = () => {
 
   const allLawyers = useLoaderData();
 
+  console.log(allLawyers);
+
   //   find the individual lawyer
   const singleLawyer = allLawyers.find((lawyer) => lawyer.id === lawyerId);
+
+  if (!singleLawyer) {
+    return <Navigate to="/not-found" />;
+  }
 
   const {
     name,
